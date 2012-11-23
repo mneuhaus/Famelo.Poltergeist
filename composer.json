@@ -4,7 +4,7 @@
     "description": "Helper Package to setup Behat and Mink inside TYPO3 Flow",
     "require": {
         "typo3/flow": "*",
-        "famelo/behat": "*",
+        "famelo/behat": "dev-master",
         "famelo/mink-extension": "*",
         "famelo/mink-goutte-driver": "*",
         "behat/mink-selenium2-driver": "*"
