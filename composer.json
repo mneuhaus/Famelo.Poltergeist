@@ -1,0 +1,17 @@
+{
+    "name": "famelo/poltergeist",
+    "type": "typo3-flow-package",
+    "description": "Helper Package to setup Behat and Mink inside TYPO3 Flow",
+    "require": {
+        "typo3/flow": "*",
+        "famelo/behat": "*",
+        "famelo/mink-extension": "*",
+        "famelo/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Famelo\\Poltergeist": "Classes"
+        }
+    }
+}
