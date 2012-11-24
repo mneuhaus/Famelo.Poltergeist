@@ -72,7 +72,7 @@ class FlowContext extends MinkContext {
     }
 
     /**
-     * @When /^I click "([^"]*)" on a "([^"]*)" which contains "([^"]*)"$/
+     * @When /^(?:|I )click "([^"]*)" on a "([^"]*)" which contains "([^"]*)"$/
      */
     public function iClickALinkOnARowWichContains($link, $selector, $text) {
         $nodes = $this->getSession()->getPage()->findAll('css', $selector);
@@ -86,14 +86,14 @@ class FlowContext extends MinkContext {
     }
 
     /**
-     * @When /^I wait (\d+) secs$/
+     * @When /^(?:|I )wait (\d+) secs$/
      */
     public function iWaitSecs($seconds) {
         sleep($seconds);
     }
 
     /**
-     * @Then /^I take a screenshot$/
+     * @Then /^(?:|I )take a screenshot$/
      */
     public function iTakeAScreenshot() {
         $filename = sprintf('%s_%s_%s.%s', $this->getMinkParameter('browser_name'), date('c'), uniqid('', true), 'png');
