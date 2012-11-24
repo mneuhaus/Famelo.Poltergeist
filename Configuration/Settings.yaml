@@ -19,3 +19,4 @@ TYPO3:
        'famelo.behat' : ['.*']
        'famelo.minkextension' : ['.*']
        'famelo.minkgouttedriver': ['.*']
+       'famelo.poltergeist': ['.*']

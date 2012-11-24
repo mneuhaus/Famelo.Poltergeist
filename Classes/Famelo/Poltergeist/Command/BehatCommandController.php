@@ -24,9 +24,7 @@ class BehatCommandController extends \TYPO3\Flow\Cli\CommandController {
 	 * @return void
 	 */
 	public function kickstartCommand() {
-		#var_dump(get_defined_constants());
-		#exit();
-		$source = FLOW_PATH_PACKAGES . 'Application/Famelo.Poltergeist/Resources/Private/';
+		$source = FLOW_PATH_PACKAGES . 'Application/Famelo.Poltergeist/Resources/Private/Kickstart/';
 		$target = FLOW_PATH_ROOT;
 		\TYPO3\Flow\Utility\Files::copyDirectoryRecursively($source, $target, TRUE);
 		$this->outputLine('Done. Try ./bin/behat to test it out.');
