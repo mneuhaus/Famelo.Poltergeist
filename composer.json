@@ -5,6 +5,7 @@
     "require": {
         "typo3/flow": "*",
         "famelo/behat": "dev-master",
+        "famelo/mink-extension": "*",
         "behat/mink-selenium2-driver": "*"
     },
     "autoload": {
