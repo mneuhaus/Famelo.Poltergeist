@@ -6,7 +6,6 @@
         "typo3/flow": "*",
         "famelo/behat": "dev-master",
         "famelo/mink-extension": "*",
-        "famelo/mink-goutte-driver": "*",
         "behat/mink-selenium2-driver": "*"
     },
     "autoload": {
