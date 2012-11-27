@@ -4,8 +4,7 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       base_url:  'http://localhost/'
-      default_session: goutte
-      goutte: ~
+      default_session: 'selenium2'
       selenium2: ~
 
 imports:
