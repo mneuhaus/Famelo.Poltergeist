@@ -97,7 +97,10 @@ class FlowContext extends MinkContext {
      */
     public function iTakeAScreenshot() {
         $filename = sprintf('%s_%s_%s.%s', $this->getMinkParameter('browser_name'), date('c'), uniqid('', true), 'png');
-        $filepath = dirname(__FILE__) . '/../Screenshots';
+        $filepath = FLOW_PATH_ROOT . '/Screenshots';
+        if (!is_dir($filepath)) {
+            mkdir($filepath);
+        }
         file_put_contents($filepath . '/' . $filename, $this->getSession()->getScreenshot());
     }
 }
